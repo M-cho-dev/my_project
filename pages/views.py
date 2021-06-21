@@ -30,9 +30,22 @@ def about(request):
     }
     return render(request, 'pages/about.html', context)
 
+
 def a1_index(request):
-    return render(request, 'pages/a1_index.html')
+
+    context = {
+        'var1': '',
+        'var2': ''
+    }
+    return render(request, 'pages/a1_index.html', context)
+
+
 def a2_tenant(request):
+
     return render(request, 'pages/a2_tenant.html')
+
+
 def a3_properties(request):
+
     return render(request, 'pages/a3_properties.html')
+

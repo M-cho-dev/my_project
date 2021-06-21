@@ -9,90 +9,174 @@
         <div class="overlay p-5">
           <h1 class="display-4 mb-4">A1-Home-Info</h1>
           <div class="a1-info">
-              <button class="btn btn-block mt-4 btn-blue" type="button">Tableau de bord</button>
-              <button class="btn btn-block mt-4 btn-blue" type="button">Relances</button>
-              <button class="btn btn-block mt-4 btn-blue" type="button">Btn3</button>
-              <button class="btn btn-block mt-4 btn-blue" type="button">Bnt4</button>
-              <button class="btn btn-block mt-4 btn-blue" type="button">Bloc notes</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button" onclick="set_view_value('btn1')">Tableau de bord</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button" onclick="set_view_value('btn2')">Relances</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button" onclick="set_view_value('btn3')">Btn3</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button" onclick="set_view_value('btn4')">Bnt4</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button" onclick="set_view_value('btn5')">Bloc notes</button>
           </div>
         </div>
       </div>
-
         <div class="home-search p-5 ">
         <div class="overlay p-5 btn-1">
-            <h1 class="display-4 mb-4">Btn-1</h1>
-              <div class="left-30">
-                <div class="dropdown btn-dropdown">
-                    <button class="btn btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Add Items
-                    </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1RentCharge">
-                      Rent + Charge
-                    </button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1Document">
-                      Document
-                    </button>
-                    <a class="dropdown-item" href="#">Factures</a>
-                    <a class="dropdown-item" href="#">Locataire</a>
-                    <a class="dropdown-item" href="#">Bien immo</a>
-                </div>
-                </div>
-              </div>
-              <div class="right-70 summary-info">
-                <p>APRIL<br>
-                Rent paid : 6/24 = 2600 euros<br>
-                Unpaid rent = 16/24 = 6700 euros<br></p>
-                <button class="btn btn-secondary mt-4" type="button">Relance doc</button>
+            <div id="a1-menu1">
+                  <h1 class="display-4 mb-4">Tableau de bord</h1>
+                  <div class="left-30">
+                    <div class="dropdown btn-dropdown">
+                        <button class="btn btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Items111
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1RentCharge">
+                          Rent + Charge
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1Document">
+                          Document
+                        </button>
+                        <a class="dropdown-item" href="#">Factures</a>
+                        <a class="dropdown-item" href="#">Locataire</a>
+                        <a class="dropdown-item" href="#">Bien immo</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="right-70 summary-info">
+                    <p>APRIL<br>
+                    Rent paid : 6/24 = 2600 euros<br>
+                    Unpaid rent = 16/24 = 6700 euros<br></p>
+                    <button class="btn btn-secondary mt-4" type="button">Relance doc</button>
 
+                  </div>
+            </div>
+            <div id="a1-menu2">
+                  <h1 class="display-4 mb-4">Relances</h1>
+                  <div class="left-30">
+                    <div class="dropdown btn-dropdown">
+                        <button class="btn btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Items222
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1RentCharge">
+                          Rent + Charge
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1Document">
+                          Document
+                        </button>
+                        <a class="dropdown-item" href="#">Factures</a>
+                        <a class="dropdown-item" href="#">Locataire</a>
+                        <a class="dropdown-item" href="#">Bien immo</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="right-70 summary-info">
+                    <p>APRIL<br>
+                    Rent paid : 6/24 = 2600 euros<br>
+                    Unpaid rent = 16/24 = 6700 euros<br></p>
+                    <button class="btn btn-secondary mt-4" type="button">Relance doc</button>
+
+                  </div>
+            </div>
+            <div id="a1-menu3">
+                  <h1 class="display-4 mb-4">Btn-3</h1>
+                  <div class="left-30">
+                    <div class="dropdown btn-dropdown">
+                        <button class="btn btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Add Items333
+                        </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1RentCharge">
+                          Rent + Charge
+                        </button>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1Document">
+                          Document
+                        </button>
+                        <a class="dropdown-item" href="#">Factures</a>
+                        <a class="dropdown-item" href="#">Locataire</a>
+                        <a class="dropdown-item" href="#">Bien immo</a>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="right-70 summary-info">
+                    <p>APRIL<br>
+                    Rent paid : 6/24 = 2600 euros<br>
+                    Unpaid rent = 16/24 = 6700 euros<br></p>
+                    <button class="btn btn-secondary mt-4" type="button">Relance doc</button>
+
+                  </div>
+            </div>
+        </div>
+        <!-- Modal Rent + charge -->
+        <div class="modal fade modal-dark" id="a1RentCharge" tabindex="-1" role="dialog" aria-labelledby="a1RentChargeTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="a1RentChargeTitle">Rent + Charge</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                search and grid...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
-            <!-- Modal Rent + charge -->
-            <div class="modal fade modal-dark" id="a1RentCharge" tabindex="-1" role="dialog" aria-labelledby="a1RentChargeTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="a1RentChargeTitle">Rent + Charge</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    search and grid...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
+          </div>
+        </div>
+         <!-- Modal Document -->
+        <div class="modal fade modal-dark" id="a1Document" tabindex="-1" role="dialog" aria-labelledby="a1DocumentTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="a1DocumentTitle">Ajout de documet</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                form to save documents...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
-             <!-- Modal Document -->
-            <div class="modal fade modal-dark" id="a1Document" tabindex="-1" role="dialog" aria-labelledby="a1DocumentTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="a1DocumentTitle">Ajout de documet</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    form to save documents...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
 
   </section>
+<script type="text/javascript">
+    let displayBtn = ''
+    let btn1 = document.getElementById('a1-menu1')
+    let btn2 = document.getElementById('a1-menu2')
+    let btn3 = document.getElementById('a1-menu3')
 
+    btn1.style.display = "block"
+    btn2.style.display = "none"
+    btn3.style.display = "none"
+
+    function set_view_value(v){
+        if(v === 'btn2'){
+            btn1.style.display = "none"
+            btn2.style.display = "block"
+            btn3.style.display = "none"
+
+        } else if(v === 'btn3'){
+            btn1.style.display = "none"
+            btn2.style.display = "none"
+            btn3.style.display = "block"
+
+        } else {
+            btn1.style.display = "block"
+            btn2.style.display = "none"
+            btn3.style.display = "none"
+        }
+    }
+</script>
 <style>
     #showcase .overlay {position: relative;}
     .btn-dropdown{float: left}
