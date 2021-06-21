@@ -32,7 +32,7 @@ def about(request):
 
 def a1_index(request):
     return render(request, 'pages/a1_index.html')
-def a2_locataier(request):
-    return render(request, 'pages/a2_locataier.html')
+def a2_tenant(request):
+    return render(request, 'pages/a2_tenant.html')
 def a3_properties(request):
     return render(request, 'pages/a3_properties.html')
