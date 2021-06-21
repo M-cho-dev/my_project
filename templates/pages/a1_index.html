@@ -1,10 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>a1-index</title>
-</head>
-<body>
-    <h2>a1-index</h2>
-</body>
-</html>
+{% extends 'base.html' %}
+{% load humanize %}
+{% block content %}
+
+  <!-- Showcase -->
+  <section id="showcase">
+    <div class="container text-center">
+      <div class="home-search p-5 main">
+        <div class="overlay p-5">
+          <h1 class="display-4 mb-4">A1-Home-Info</h1>
+          <div class="a1-info">
+              <button class="btn btn-block mt-4 btn-blue" type="button">Tableau de bord</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button">Relances</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button">Btn3</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button">Bnt4</button>
+              <button class="btn btn-block mt-4 btn-blue" type="button">Bloc notes</button>
+          </div>
+        </div>
+      </div>
+
+        <div class="home-search p-5 ">
+        <div class="overlay p-5 btn-1">
+            <h1 class="display-4 mb-4">Btn-1</h1>
+              <div class="left-30">
+                <div class="dropdown btn-dropdown">
+                    <button class="btn btn-blue dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Add Items
+                    </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1RentCharge">
+                      Rent + Charge
+                    </button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#a1Document">
+                      Document
+                    </button>
+                    <a class="dropdown-item" href="#">Factures</a>
+                    <a class="dropdown-item" href="#">Locataire</a>
+                    <a class="dropdown-item" href="#">Bien immo</a>
+                </div>
+                </div>
+              </div>
+              <div class="right-70 summary-info">
+                <p>APRIL<br>
+                Rent paid : 6/24 = 2600 euros<br>
+                Unpaid rent = 16/24 = 6700 euros<br></p>
+                <button class="btn btn-secondary mt-4" type="button">Relance doc</button>
+
+              </div>
+            </div>
+            <!-- Modal Rent + charge -->
+            <div class="modal fade modal-dark" id="a1RentCharge" tabindex="-1" role="dialog" aria-labelledby="a1RentChargeTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="a1RentChargeTitle">Rent + Charge</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    search and grid...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Modal Document -->
+            <div class="modal fade modal-dark" id="a1Document" tabindex="-1" role="dialog" aria-labelledby="a1DocumentTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="a1DocumentTitle">Ajout de documet</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    form to save documents...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+<style>
+    #showcase .overlay {position: relative;}
+    .btn-dropdown{float: left}
+    .btn-blue{
+        background: #2b5a8a;
+        border-color: #2a6d9c;
+        color: #cbcbcb;
+    }
+    .summary-info {
+        content: '';
+        min-height: 200px;
+        background: rgb(56, 64, 102);
+        border-radius: 5px;
+        width: 70%;
+        display: inline-block;
+        padding: 10px;
+    }
+    .modal-dark{color: #1b1b1b}
+</style>
+{% endblock %}
